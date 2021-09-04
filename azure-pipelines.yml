@@ -4,16 +4,17 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- main
+#- main
+- dev-kyiwasak
 
 pool:
   vmImage: ubuntu-latest
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
-    Python35:
-      python.version: '3.5'
+##    Python27:
+##      python.version: '2.7'
+##    Python35:
+##      python.version: '3.5'
     Python36:
       python.version: '3.6'
     Python37:
